@@ -8,6 +8,7 @@ workflows:
 
     scripts:
       - npm install
+      - npm install -D @capacitor/assets
       - npm run build
       - npx capacitor-assets generate
       - npx cap sync android
